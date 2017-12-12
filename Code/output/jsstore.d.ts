@@ -209,77 +209,77 @@ declare module JsStore {
     }
     interface ISelect {
         From: any;
-        Where: any;
-        Skip: number;
-        Limit: number;
-        OnSuccess: Function;
-        OnError: Function;
-        Order: IOrder;
-        GroupBy: any;
-        Aggregate: {
-            Max: any;
-            Min: any;
-            Count: any;
-            Sum: any;
-            Avg: any;
+        Where?: any;
+        Skip?: number;
+        Limit?: number;
+        OnSuccess?: Function;
+        OnError?: Function;
+        Order?: IOrder;
+        GroupBy?: any;
+        Aggregate?: {
+            Max?: any;
+            Min?: any;
+            Count?: any;
+            Sum?: any;
+            Avg?: any;
         };
-        IgnoreCase: boolean;
-        Distinct: boolean;
+        IgnoreCase?: boolean;
+        Distinct?: boolean;
     }
     interface IOrder {
-        By: string;
-        Type: string;
+        By?: string;
+        Type?: string;
     }
     interface ICount {
         From: any;
-        IgnoreCase: boolean;
-        Where: any;
-        OnSuccess: Function;
-        OnError: Function;
+        IgnoreCase?: boolean;
+        Where?: any;
+        OnSuccess?: Function;
+        OnError?: Function;
     }
     interface IDelete {
         From: string;
-        IgnoreCase: boolean;
-        Where: any;
-        OnSuccess: Function;
-        OnError: Function;
+        IgnoreCase?: boolean;
+        Where?: any;
+        OnSuccess?: Function;
+        OnError?: Function;
     }
     interface IUpdate {
-        In: string;
-        IgnoreCase: boolean;
-        Set: any;
-        Where: any;
-        OnSuccess: Function;
-        OnError: Function;
+        In?: string;
+        IgnoreCase?: boolean;
+        Set?: any;
+        Where?: any;
+        OnSuccess?: Function;
+        OnError?: Function;
     }
     interface IInsert {
         Into: string;
-        Values: Array<any>;
-        Return: boolean;
-        OnSuccess: Function;
-        OnError: Function;
-        SkipDataCheck: any;
+        Values?: Array<any>;
+        Return?: boolean;
+        OnSuccess?: Function;
+        OnError?: Function;
+        SkipDataCheck?: any;
     }
     interface ICondition {
         Column: string;
-        Value: string;
-        Op: string;
+        Value?: string;
+        Op?: string;
     }
     interface ITableJoin {
         Column: string;
         Table: string;
-        Where: any;
-        Order: IOrder;
-        JoinType: string;
-        NextJoin: INextJoin;
+        Where?: any;
+        Order?: IOrder;
+        JoinType?: string;
+        NextJoin?: INextJoin;
     }
     interface ISelectJoin {
         From: IJoin;
-        Count: boolean;
-        Skip: number;
-        Limit: number;
-        OnSuccess: Function;
-        OnError: Function;
+        Count?: boolean;
+        Skip?: number;
+        Limit?: number;
+        OnSuccess?: Function;
+        OnError?: Function;
     }
     interface IJoin {
         Table1: ITableJoin;
